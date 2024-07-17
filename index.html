@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- --------- UNICONS ---------- -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- --------- FAVICON ---------- -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/Logo.png"
+      type="image/x-icon"
+    />
+
+    <title>Portfolio | Syaeful Permana</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">Saufl</p>
+          <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="#home" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#about" class="nav-link">About</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#projects" class="nav-link">Projects</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <button class="btn download-cv">
+            Download CV <i class="uil uil-file-alt"></i>
+          </button>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+      <!-- -------------- MAIN ---------------- -->
+      <main class="wrapper">
+        <!-- -------------- FEATURED BOX ---------------- -->
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+              <span>Syaeful Permana</span>
+            </div>
+            <div class="featured-name">
+              <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+              <p>
+                Saya seorang siswa SMK jurusan RPL yang bersemangat dalam
+                mengembangkan tampilan website yang menarik secara visual dan
+                ramah pengguna.
+              </p>
+            </div>
+            <div class="featured-text-btn">
+              <button class="btn blue-btn" id="hireMe">Hire Me</button>
+              <button class="btn download-cv">
+                Download CV <i class="uil uil-file-alt"></i>
+              </button>
+            </div>
+            <div class="social_icons">
+              <div class="icon" id="igIcon"><i class="uil uil-instagram"></i></div>
+              <div class="icon" id="linkedinIcon"><i class="uil uil-linkedin-alt"></i></div>
+              <div class="icon" id="githubIcon"><i class="uil uil-github-alt"></i></div>
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+              <i class="uil uil-mouse-alt"></i>
+              <p>Scroll Down</p>
+            </a>
+          </div>
+        </section>
+        <!-- -------------- ABOUT BOX ---------------- -->
+        <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="row">
+              <div class="about-info">
+                <h3>
+                  Hallo! Nama saya <span>Syaeful Permana</span>, seorang siswa
+                  sekolah menengah kejuruan yang sedang memperdalam ilmu di
+                  bidang pengembangan frontend dan desain web.
+                </h3>
+                <p>
+                  Saya sangat antusias dalam mempelajari dan mengembangkan
+                  keterampilan di bidang pengembangan frontend web. Syaeful
+                  selalu bersemangat untuk mencari solusi kreatif dan efektif
+                  dalam setiap proyek yang dihadapinya.
+                </p>
+                <div class="about-btn">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- -------------- PROJECT BOX ---------------- -->
+
+        <section class="section" id="projects">
+          <div class="top-header">
+            <h1>Projects</h1>
+          </div>
+          <div class="tab">
+            <div class="nav-tab">
+              <button
+                class="tablinks active btn"
+                onclick="openTab(event, 'project')"
+              >
+                Project
+              </button>
+              <button
+                class="tablinks btn"
+                onclick="openTab(event, 'achievement')"
+              >
+                Achievement
+              </button>
+              <button class="tablinks btn" onclick="openTab(event, 'skills')">
+                Skills
+              </button>
+            </div>
+
+            <div id="project" class="tabcontent">
+              <div class="project-container">
+                <div class="project-box">
+                  <i class="uil uil-briefcase-alt"></i>
+                  <a href="https://saufl.github.io/kalkulator-sederhana/">Simple Calculator</a>
+                  <p>
+                    Aplikasi sederhana untuk melakukan operasi matematika dasar
+                    seperti penjumlahan, pengurangan, perkalian, dan pembagian
+                  </p>
+                </div>
+                <div class="project-box">
+                  <i class="uil uil-users-alt"></i>
+                  <a href="https://saufl.github.io/quiz-app/">Quiz App</a>
+                  <p>Aplikasi sederhana kuis interaktif dengan berbagai kategori</p>
+                </div>
+                <div class="project-box">
+                  <i class="uil uil-award"></i>
+                  <a href="https://saufl.github.io/to-list-app/">To do List</a>
+                  <p>
+                    Aplikasi sederhana yang memungkinkan pengguna untuk membuat dan
+                    mengelola kegiatan yang akan berlangsung.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="achievement" class="tabcontent">
+              <div class="project-container">
+                <div class="project-box">
+                  <img src="assets/images/Dicoding Sertifikat Pemograma Web Dasar.png" alt="">
+                  <a>Belajar Dasar Pemrograman Web - Dicoding</a>
+                </div>
+                <div class="project-box">
+                  <img src="assets/images/Freecodecamp Sertifikat Responsive Web.png" alt="">
+                  <a>Responsive Web Design - Freecodecamp</a>
+                </div>
+              </div>
+            </div>
+
+            <div id="skills" class="tabcontent">
+              <!-- New Skills tab content -->
+              <div class="project-container">
+                <div class="project-box">
+                  <img src="assets/images/html.svg" alt="" class="responsive-svg">
+                  <h3>HTML</h3>
+                </div>
+                <div class="project-box">
+                  <img src="assets/images/css.svg" alt="" class="responsive-svg">
+                  <h3>CSS</h3>
+                </div>
+                <div class="project-box">
+                  <img src="assets/images/javascript.svg" alt="" class="responsive-svg">
+                  <h3>JavaScript</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- -------------- CONTACT BOX ---------------- -->
+
+        <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+              <div class="contact-info">
+                <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                <p>
+                  <i class="uil uil-envelope"></i> Email:
+                  <a href="">syaefulpermana89@gmail.com</a>
+                </p>
+                <p>
+                  <i class="uil uil-instagram"></i> Instagram:
+                  <a href="https://www.instagram.com/saufl_">saufl_</a>
+                </p>
+                <p>
+                  <i class="uil uil-linkedin-alt"></i> Linkedin:
+                  <a href="https://www.linkedin.com/in/syaeful-permana">Syaeful Permana</a>
+                </p>
+                <p>
+                  <i class="uil uil-github-alt"></i> Github:
+                  <a href="https://github.com/saufl">Syaeful Permana</a>
+                </p>
+          </div>
+        </section>
+      </main>
+
+      <!-- --------------- FOOTER --------------- -->
+      <footer>
+        <div class="top-footer">
+          <p>SYF .</p>
+        </div>
+        <div class="middle-footer">
+          <ul class="footer-menu">
+            <li class="footer_menu_list">
+              <a href="#home">Home</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#about">About</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-footer">
+          <p>
+            Copyright &copy;
+            <a href="#home" style="text-decoration: none">Syaeful Permana</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
